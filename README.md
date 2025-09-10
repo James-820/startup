@@ -1,62 +1,52 @@
-# Your startup name here
+# James Day's Startup: Habit.ly
 
 [My Notes](notes.md)
 
-A brief description of the application here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+This application will allow users to track habits and motivate them to keep completing them. To do that, there will be accountability groups that users can form, "streaks" (consecutive days the habit has been completed) will be kept track of and displayed, and I possibly will add in gamifiaction to further the positive response users get from completing goals.
 
+>  This is an example of a quote
 
-> [!NOTE]
->  This is a template for your startup application. You must modify this `README.md` file for each phase of your development. You only need to fill in the section for each deliverable when that deliverable is submitted in Canvas. Without completing the section for a deliverable, the TA will not know what to look for when grading your submission. Feel free to add additional information to each deliverable description, but make sure you at least have the list of rubric items and a description of what you did for each item.
-
-> [!NOTE]
->  If you are not familiar with Markdown then you should review the [documentation](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) before continuing.
+>  Markdown [documentation](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) is here.
 
 ## 🚀 Specification Deliverable
 
-> [!NOTE]
->  Fill in this sections as the submission artifact for this deliverable. You can refer to this [example](https://github.com/webprogramming260/startup-example/blob/main/README.md) for inspiration.
+> Fill in this sections as the submission artifact for this deliverable. You can refer to this [example](https://github.com/webprogramming260/startup-example/blob/main/README.md) for inspiration.
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [ ] Proper use of Markdown
-- [ ] A concise and compelling elevator pitch
-- [ ] Description of key features
-- [ ] Description of how you will use each technology
-- [ ] One or more rough sketches of your application. Images must be embedded in this file using Markdown image references.
+- [x] Proper use of Markdown
+- [x] A concise and compelling elevator pitch
+- [x] Description of key features
+- [x] Description of how you will use each technology
+- [x] One or more rough sketches of your application. Images must be embedded in this file using Markdown image references.
 
 ### Elevator pitch
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+This webapp allows users to enter custom habits that they can track. It'll keep track of consecutive days the habit has been completed, it will allow users to form accountability groups with other users to motivate them, and it will be FREE (Ad revenue could be introduced, but only banners that don't get in the way, no pop-ups)! It will be a webapp that supports people in achieveing their goals.
 
 ### Design
 
-![Design image](placeholder.png)
+![Design image 1](James_Day_spec_pic1.jpg) ![Design image 2](James_Day_spec_pic2.jpg) ![Design image 3](James_Day_spec_pic3.jpg)
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-```mermaid
-sequenceDiagram
-    actor You
-    actor Website
-    You->>Website: Replace this with your design
-```
+These drawings just show the login screen, the user's view of their habits, and the view of what an accountability group could look like.
 
 ### Key features
 
-- Describe your key feature
-- Describe your key feature
-- Describe your key feature
+- Different habit types (binary, multi-part, numerical, etc.) to better track different behaviors
+- Keeps track of streaks for habits
+- Accountability groups to motivate you to complete your goals, and prizes set by the group owner for completing group goals
+- Custom habit and goal categories (fitness, school, spiritual, etc.) to help users organize multiple habits
 
 ### Technologies
 
 I am going to use the required technologies in the following ways.
 
-- **HTML** - Description here
-- **CSS** - Description here
-- **React** - Description here
-- **Service** - Description here
-- **DB/Login** - Description here
-- **WebSocket** - Description here
+- **HTML** - Use HTML to structure the pages within the webapp
+- **CSS** - Styling the application and adding animations for a good feel for the user
+- **React** - Frontend code to interact with a user, represent functionality with components, and route what is displayed using JavaScript and the React web framework. Basically, make it functional.
+- **Service** - Login, logout, and register user support. Third party service will be to generate a random meme or somthing funny when a goal is met.
+- **DB/Login** - Stores login for users, and what habits a user is keeping track of.
+- **WebSocket** - Used to update the habits when a new day starts, and also to send messages to the accountability groups.
 
 ## 🚀 AWS deliverable
 
