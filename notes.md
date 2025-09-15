@@ -43,8 +43,25 @@ My startup: [Habit.ly](http://habitly.click)
 - Click `Launch Instance`
 
 #### How to SSH into the Server
+- This uses the IP address from above to shell into the server
+- Go to console window (Git Bash) and use the following command to shell into the server:
+```
+ssh -i [key pair file] ubuntu@[ip address]
+```
+- For example, mine would be (note that this is my elastic IP address, and a URL will work later once one is registered):
+```
+ssh -i [my key file] ubuntu@98.88.134.225
+```
+- If I get a warning about my key file permissions, then I can run the following command to help (IDK what it does lol):
+```
+chmod 600 mykeyfile.pem
+```
+- It's gonna say it hasn't seen the server before, but you're confident, so say yes
+- You can now poke around
+- Once finished, type `exit` to exit the ssh
 
 #### Setting up Elastic IP Address
+- 
 
 ### Route53 Basic Instructions
 
