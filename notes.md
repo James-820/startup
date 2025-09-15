@@ -24,8 +24,27 @@ My startup: [Habit.ly](http://habitly.click)
 ## AWS
 - For setting up servers, use EC2 service from AWS
 - For domain names, use Route53
+- Make sure you have an AWS account first (with payments set up cuz this aint free)
 
 ### EC2 Basic Instructions
+> [!NOTE]
+> The AMI for the server is for this class, but I'm sure you could use it for personal stuff, too. Hopefully.
+
+- From AWS console, go to the EC2 service
+- Make sure the region is N. Virginia (for the AMI)
+- Select `Launch Instance`
+- Give the instance a name (a good convention is `[owner]-[purpose]-[version]`)
+- Find the AMI with the ID `ami-018f3a022e128a6b2` and select it
+- Select the server type, like t3.nano, that you want (be aware of prices)
+- Create a new key pair or select an existing one (for ssh security)
+- Enable `auto-assign public IP` and select an existing security group (or create one if you haven't already)
+- Allow SSH, HTTP, and HTTPS traffic from anywhere
+- If your server is a T3 class, then make sure `Credit specification` is set to `Unlimited` in the Advanced Details
+- Click `Launch Instance`
+
+#### How to SSH into the Server
+
+#### Setting up Elastic IP Address
 
 ### Route53 Basic Instructions
 
