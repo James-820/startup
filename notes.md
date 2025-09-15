@@ -61,7 +61,19 @@ chmod 600 mykeyfile.pem
 - Once finished, type `exit` to exit the ssh
 
 #### Setting up Elastic IP Address
-- 
+Stopping and starting your server will change the IP address when you start it up again,
+so assigning an elastic IP address keeps that from happening. The first elastic IP address is free,
+but only free while server is running, so for me I'll just keep it running. Good "just in case" thing.
+
+- From AWS console, go to EC2 service.
+- Make sure the region is set to the one where your server is.
+- On left menu, navigate to `Network & Security` > `Elastic IPs`
+- Click `Allocate Elastic IP address`
+- Click `Allocate`
+- Select the newly created address and click `Actions`
+- Click `Associate Elastic IP address`
+- Click on the `Instance` box and select the server instance
+- Click `Associate`
 
 ### Route53 Basic Instructions
 
