@@ -168,7 +168,16 @@ sudo service caddy restart
 - This enables HTTPS on the web server. All done for now!
 
 ## HTML
-- Placeholder
+
+### Intro Notes
+- Stands for Hyper Text Markup Language
+- Defines the content and structure of a web page (styling and interactivity are done with CSS and JavaScript, respectively).
+- Elements are contained within tags, and the tags are contained in `<>` (the closing tag has a `/` before the name)
+- Elements can have attributes, with values in single or double quotes (example: `attribute="value"`)
+- The default HMTL file displayed when going to a website is `index.hmtl`, so that's a great place for the main/home page of the web application
+
+> [!IMPORTANT]
+> Use the Live Server extension in VS Code to display an HTML file on your machine locally to preview your work
 
 ## CSS
 - Placeholder
