@@ -179,6 +179,10 @@ sudo service caddy restart
 > [!IMPORTANT]
 > Use the Live Server extension in VS Code to display an HTML file on your machine locally to preview your work
 
+### Structure, Media, and Input
+- Structure is made up of the DOM/tree data structure. Has lots of tags, elements, and parent-child relationships between elements.
+- 
+
 ## CSS
 - Placeholder
 
