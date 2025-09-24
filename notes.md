@@ -181,7 +181,7 @@ sudo service caddy restart
 
 ### Structure, Media, and Input
 - Structure is made up of the DOM/tree data structure. Has lots of tags, elements, and parent-child relationships between elements.
-- 
+- Style can be added in the tags themselves, in a "style" tag in the head part, or by referencing a CSS stylesheet in the head
 
 ## CSS
 - Placeholder
