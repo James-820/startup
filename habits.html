@@ -1,7 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!--Head/Metadata Stuff-->
+    <head>
+        <!--I Forgor-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--Title of the webpage-->
+        <title>Habit.ly</title>
+        <!--Webpage Icon (is a placeholder for now, logo coming soon)-->
+        <link rel="icon" href="png-8-bit-poke-ball.png" />
+    </head>
 
   <body>
+
     <header>
             <!--Visible Title-->
             <h1 style="color: green; font-weight: bold;">Habit.ly</h1>
@@ -17,10 +27,37 @@
             <!--Horizontal Line-->
             <hr />
         </header>
+
     <main>
       <!--Page Title-->
       <h2>My Habits</h2>
+      <!--Habit tracking information-->
+      <div style="background-color: lightslategray; padding: 0.5em; border-radius: 20px;">
+          <!--Habit 1-->
+          <div class="habit-card" style="background-color: darkslategray; border-radius: 10px; padding: 0.5em; margin: 0.5em;">
+          <span class="habit-name" style="color: whitesmoke; font-weight: bold; font-size: large;">Make Bed</span>
+          <br />
+          <ul style="color: whitesmoke;">
+            <li><span style="font-weight: bold;">Time:</span> Before 8:00 AM</li>
+            <li><span style="font-weight: bold;">I'm done when:</span> All the blankets are tucked or folded</li>
+            <li><span style="font-weight: bold;">Share to:</span> Group 1</li>
+          </ul>
+          <button type="button">Completed</button>
+        </div>
+        <!--Habit 2-->
+        <div class="habit-card" style="background-color: darkslategray; border-radius: 10px; padding: 0.5em; margin: 0.5em;">
+          <span class="habit-name" style="color: whitesmoke; font-weight: bold; font-size: large;">Water Plants</span>
+          <br />
+          <ul style="color: whitesmoke;">
+            <li><span style="font-weight: bold;">Time:</span> After 5:00 PM</li>
+            <li><span style="font-weight: bold;">I'm done when:</span> All 5 plants are watered</li>
+            <li><span style="font-weight: bold;">Share to:</span> None</li>
+          </ul>
+          <button type="button">Completed</button>
+        </div>
+      </div>
     </main>
+
     <footer>
       <!--Horizontal Line-->
       <hr />
@@ -29,5 +66,6 @@
       <span>James Day's <a href="https://github.com/James-820/startup">GitHub</a> Repository</span>
       <p><a href="about.html">About Habit.ly</a></p>
     </footer>
+  
   </body>
-        </html>
+</html>
