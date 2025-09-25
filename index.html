@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="eng">
     <!--Head/Metadata Stuff-->
     <head>
         <!--I Forgor-->
@@ -17,6 +17,8 @@
         <header>
             <!--Visible Title-->
             <h1 style="color: green; font-weight: bold;">Habit.ly</h1>
+            <!--Subtitle containing slogan-->
+            <h3 style="font-style: italic; color: darkslategray;">Be accountable. Make progress.</h3>
             <!--Menu Items for Navigation-->
             <nav>
                 <!--Home, My Habits, and My Groups for now-->
@@ -30,7 +32,27 @@
 
         <!--Main-->
         <main>
-            <!---->
+            <!--Home Title-->
+            <h2>Home</h2>
+            <div style="background-color: lightslategray; padding: 1em;">
+                <!--Form so that this basic HTML can do something basic:-->
+                <form method="get" action="habits.html">
+                    <!--Login info-->
+                    <h3>Login</h3>
+                    <p>
+                        <span>Username:</span>
+                        <br />
+                        <input type="text" placeholder="Username or email" />
+                    </p>
+                    <p>
+                        <span>Password:</span>
+                        <br />
+                        <input type="text" placeholder="Password" />
+                    </p>
+                    <!--Button-->
+                    <button type="submit">Log In</button>
+                </form>
+            </div>
         </main>
 
         <!--Footer-->
@@ -40,6 +62,7 @@
             <!--My Info:-->
             <span>Creator information:</span><br />
             <span>James Day's <a href="https://github.com/James-820/startup">GitHub</a> Repository</span>
+            <p><a href="about.html">About Habit.ly</a></p>
         </footer>
 
     </body>
