@@ -186,6 +186,10 @@ sudo service caddy restart
 ## CSS
 - Placeholder
 
+### Selectors Reference List
+
+### Common Attributes Reference List
+
 ## React Part 1: Routing
 - Placeholder
 

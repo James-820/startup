@@ -58,15 +58,15 @@ For this deliverable I did the stuff on Canvas.
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [ ] **HTML pages** - I did not complete this part of the deliverable.
-- [ ] **Proper HTML element usage** - I did not complete this part of the deliverable.
-- [ ] **Links** - I did not complete this part of the deliverable.
-- [ ] **Text** - I did not complete this part of the deliverable.
-- [ ] **3rd party API placeholder** - I did not complete this part of the deliverable.
-- [ ] **Images** - I did not complete this part of the deliverable.
-- [ ] **Login placeholder** - I did not complete this part of the deliverable.
-- [ ] **DB data placeholder** - I did not complete this part of the deliverable.
-- [ ] **WebSocket placeholder** - I did not complete this part of the deliverable.
+- [x] **HTML pages** - I added HTML pages for index, about, habits, and groups.
+- [x] **Proper HTML element usage** - I included the necessary elements and used a lot more, too.
+- [x] **Links** - I added links to my GitHub repository, as well as the other HTML pages.
+- [x] **Text** - I did in fact add text.
+- [x] **3rd party API placeholder** - I added placeholders on the "about" page for an image and motivational quote.
+- [x] **Images** - Only two images: the placeholder for 3rd party, and the icon (which will be changed later, it's a Poke Ball rn).
+- [x] **Login placeholder** - I included login inputs that don't work.
+- [x] **DB data placeholder** - The data that would be stored are the groups and habits. And login info I guess.
+- [x] **WebSocket placeholder** - The WebSocket stuff would be the notifications on the "groups" page.
 
 ## 🚀 CSS deliverable
 
