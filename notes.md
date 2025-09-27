@@ -183,6 +183,31 @@ sudo service caddy restart
 - Structure is made up of the DOM/tree data structure. Has lots of tags, elements, and parent-child relationships between elements.
 - Style can be added in the tags themselves, in a "style" tag in the head part, or by referencing a CSS stylesheet in the head
 
+### Elements Reference List
+- `<html>`
+- `<head>`
+- `<meta>`
+- `<body`
+- `<header>`
+- `<main>`
+- `<footer>`
+- `<style>`
+- `<a>`
+- `<link>`
+- `<div>`
+- `<nav>`
+- `<ul>`
+- `<li>`
+- `<h1-6>`
+- `<form>`
+- `<input>` - input, can be different types with the `type` attribute:
+  - `text`:
+  - 
+- `<span>` - inline element
+- `<p>` - paragraph
+- `<hr>` - horizontal line
+- `<>`
+
 ## CSS
 - Helps your HTML be cute.
 - 3 ways of adding CSS:
@@ -190,6 +215,10 @@ sudo service caddy restart
   2. Include all your CSS statements and rules in a `<style>` element at the top
   3. Include a `<link>` element with `rel=stylesheet` and `href` set to your stylesheet
 - These will be applied in the order they are seen by the browser: the most recent will be applied on top of other styles
+- Selectors (these select which elements get which styles):
+  - Element name: like `body` or `header`, just picks all of that element
+  - Descendant combinator: `section h2`, space delimited list where each item is a descendant of the one before (this example gets all the `h2` elements that are descendants, or within, `section` elements)
+  - 
 
 ### Selectors & Attributes/Values Reference List
 - `display: none` hides the element (good for media queries)
