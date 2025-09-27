@@ -186,17 +186,14 @@ sudo service caddy restart
 ## CSS
 - Helps your HTML be cute.
 
-### Selectors Reference List
-- 
-
-### Common Attributes Reference List
-
-- 
+### Selectors & Attributes/Values Reference List
+- `display: none` hides the element (good for media queries)
 
 ### Flex
 
 - This is the [website](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) that I got my notes from
 - IDK about prefixing stuff yet
+- `flex-direction` is set to column if we want the children to be arranged top and bottom, and set to row if side by side is wanted
 
 ![Flex image reference 1](CSS_Flex_Ref1.png)
 
@@ -252,6 +249,28 @@ Example Code:
    align-self: auto | flex-start | flex-end | center | baseline | stretch;
 }
 ```
+
+### Media Queries
+
+- Media queries detect certain conditions of the webpage, for example, if the page is in portait orientation
+- The CSS inside the media query gets applied when the condition is true
+
+Example code:
+
+```
+```
+
+### Frameworks
+
+- CSS Frameworks are essentially pre-written code that helps you speed up your styling
+- Benefits: helps your website look good, speeds up the process of styling
+- Drawbacks: your website will look like everyone else's
+
+#### Bootstrap
+
+
+
+#### Tailwind
 
 ## React Part 1: Routing
 - Placeholder
