@@ -191,7 +191,11 @@ sudo service caddy restart
 
 ### Common Attributes Reference List
 
+- 
+
 ### Flex
+
+![Flex image reference 1](CSS_Flex_Ref1.png)
 
 Here's a bit of example code for CSS flex:
 
@@ -202,15 +206,26 @@ Here's a bit of example code for CSS flex:
    flex-wrap: nowrap | wrap | wrap-reverse;
    flex-flow: row nowrap;
    justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | safe | unsafe;
+   align-items: stretch | flex-start | flex-end | center | (first/last-)baseline;
+   align-content: flex-start | flex-end | space-between | space-around | stretch | center;
+   ...
+   gap: 10px;
+   gap: 10px 20px; /* row-gap column-gap */
+   row-gap: 10px;
+   column-gap: 20px;
 }
 ```
 Parent/Container info:
 
 - `display` refers to wether or not a container 
 - `flex-direction` is the direction, horizontal or vertical, that the container flexes, and `row` is default
-- `flex-flow`
-- `justify-content` defines alignment along the main axis, safest values are flex-start, flex-end, and center. "Safe" ensures that
+- `flex-flow` is shorthand for both the two upper options, the default of which is `row nowrap`
+- `justify-content` defines alignment along the main axis, safest values are flex-start, flex-end, and center. `safe` ensures that
 the spacing is such that the element won't render off-screen and can't be scrolled
+- `align-items` is kind of like the justify-content version for the cross axis, `stretch` is the default and still respects min and max dimensions.
+`safe` and `unsafe` keywords can also be used.
+- `align-content` only works for multi-line flexible containers that have wrap enabled. Otherwise it's pretty much ignored
+- `gap` determines the space between flex items (not for the outer edges)
 - ``
 
 Child/Item info:
