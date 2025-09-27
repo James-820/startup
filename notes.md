@@ -255,9 +255,33 @@ Example Code:
 - Media queries detect certain conditions of the webpage, for example, if the page is in portait orientation
 - The CSS inside the media query gets applied when the condition is true
 
+Possible conditions:
+
+- `orientation: portrait | landscape` detects the orientation of the viewport, applies if orientation is the one listed
+- `max-height: "N"px` detects the height of the viewport, applies if the viewport is less than or equal to "N" pixels
+
 Example code:
 
 ```
+@media (condition: condition-param) {
+   CSS goes here
+}
+```
+```
+@media (orientation: portait) {
+   main {
+      flex-direction: column;
+   }
+}
+
+@media (max-height: 700px) {
+   header {
+      display: none;
+   }
+   footer {
+      display: none;
+   }
+}
 ```
 
 ### Frameworks
