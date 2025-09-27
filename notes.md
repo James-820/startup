@@ -185,9 +185,15 @@ sudo service caddy restart
 
 ## CSS
 - Helps your HTML be cute.
+- 3 ways of adding CSS:
+  1. Apply the attributes directly in the element tags
+  2. Include all your CSS statements and rules in a `<style>` element at the top
+  3. Include a `<link>` element with `rel=stylesheet` and `href` set to your stylesheet
+- These will be applied in the order they are seen by the browser: the most recent will be applied on top of other styles
 
 ### Selectors & Attributes/Values Reference List
 - `display: none` hides the element (good for media queries)
+- `display: flex` makes the element a flex container, the children can have the `flex` attribute
 
 ### Flex
 
