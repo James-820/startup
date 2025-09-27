@@ -187,8 +187,36 @@ sudo service caddy restart
 - Placeholder
 
 ### Selectors Reference List
+- 
 
 ### Common Attributes Reference List
+
+### Flex
+
+Here's a bit of example code for CSS flex:
+
+```
+.container {
+   display: flex;
+   flex-direction: row | row-reverse | column | column-reverse;
+   flex-wrap: nowrap | wrap | wrap-reverse;
+   flex-flow: row nowrap;
+   justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | safe | unsafe;
+}
+```
+Parent/Container info:
+
+- `display` refers to wether or not a container 
+- `flex-direction` is the direction, horizontal or vertical, that the container flexes, and `row` is default
+- `flex-flow`
+- `justify-content` defines alignment along the main axis, safest values are flex-start, flex-end, and center. "Safe" ensures that
+the spacing is such that the element won't render off-screen and can't be scrolled
+- ``
+
+Child/Item info:
+
+- ``
+- ``
 
 ## React Part 1: Routing
 - Placeholder
