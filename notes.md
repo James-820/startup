@@ -184,7 +184,7 @@ sudo service caddy restart
 - Style can be added in the tags themselves, in a "style" tag in the head part, or by referencing a CSS stylesheet in the head
 
 ## CSS
-- Placeholder
+- Helps your HTML be cute.
 
 ### Selectors Reference List
 - 
@@ -195,9 +195,24 @@ sudo service caddy restart
 
 ### Flex
 
+- This is the [website](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) that I got my notes from
+- IDK about prefixing stuff yet
+
 ![Flex image reference 1](CSS_Flex_Ref1.png)
 
-Here's a bit of example code for CSS flex:
+Parent/Container info:
+
+- `display` refers to wether or not a container 
+- `flex-direction` is the direction, horizontal or vertical, that the container flexes, and `row` is default
+- `flex-flow` is shorthand for both the two upper options, the default of which is `row nowrap`
+- `justify-content` defines alignment along the main axis, safest values are flex-start, flex-end, and center. `safe` ensures that
+the spacing is such that the element won't render off-screen and can't be scrolled
+- `align-items` is kind of like the justify-content version for the cross axis, `stretch` is the default and still respects min and max dimensions.
+`safe` and `unsafe` keywords can also be used.
+- `align-content` only works for multi-line flexible containers that have wrap enabled. Otherwise it's pretty much ignored
+- `gap` determines the space between flex items (not for the outer edges) and is kind of like a minimum gutter
+
+Example code:
 
 ```
 .container {
@@ -215,23 +230,28 @@ Here's a bit of example code for CSS flex:
    column-gap: 20px;
 }
 ```
-Parent/Container info:
-
-- `display` refers to wether or not a container 
-- `flex-direction` is the direction, horizontal or vertical, that the container flexes, and `row` is default
-- `flex-flow` is shorthand for both the two upper options, the default of which is `row nowrap`
-- `justify-content` defines alignment along the main axis, safest values are flex-start, flex-end, and center. `safe` ensures that
-the spacing is such that the element won't render off-screen and can't be scrolled
-- `align-items` is kind of like the justify-content version for the cross axis, `stretch` is the default and still respects min and max dimensions.
-`safe` and `unsafe` keywords can also be used.
-- `align-content` only works for multi-line flexible containers that have wrap enabled. Otherwise it's pretty much ignored
-- `gap` determines the space between flex items (not for the outer edges)
-- ``
 
 Child/Item info:
 
-- ``
-- ``
+- `order` is the order in which the item is placed, default is 0, and items with same order default to source order
+- `flex-grow` allows the item to grow if necessary, accepts unitless value that acts as a proportion,  default is 0 (negaitve are invalid)
+- `flex-shrink` is like flex-grow but for shrinking
+- `flex-basis` defines the default size of a flex item, can be length (20%, 5em, etc.) or keyword, `auto` keyword means width or height property, `content` sizes based on the content it contains but isn't well supported yet
+- `flex` is shorthand for `flex-grow`, `flex-shrink`, and `flex-basis`, and the default is `0 1 auto`, and is recommended above setting the properties individually
+- `align-self` allows the `align-items` property to be overriden for individual flex items 
+
+Example Code:
+
+```
+.item {
+   order: 4;
+   flex-grow: 2;
+   flex-shrink: 3;
+   flex-basis: auto;
+   flex: 0 1 auto;
+   align-self: auto | flex-start | flex-end | center | baseline | stretch;
+}
+```
 
 ## React Part 1: Routing
 - Placeholder
