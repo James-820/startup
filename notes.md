@@ -357,6 +357,15 @@ Example code:
 ```
 npm install bootstrap@5.3.3
 ```
+- Make sure the links above are to the most recent version of Bootstrap to use in your application
+- HTML elements are styled with Bootstrap by using the proper class
+- To change the default color of the document, place something like this into the custom CSS sheet:
+```
+:root {
+  --bs-primary: #28a745; /* Change to green */
+  --bs-primary-rgb: 40, 167, 69; /* RGB values for the same color */
+}
+```
 
 #### Tailwind
 
