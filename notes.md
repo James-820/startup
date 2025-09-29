@@ -366,6 +366,11 @@ npm install bootstrap@5.3.3
   --bs-primary-rgb: 40, 167, 69; /* RGB values for the same color */
 }
 ```
+#### Bootstrap Reference List
+- Accordion Element:
+  - Add a `<div>` with `class="accordion"`, this is the main container wrapper
+  - Within that, add other `<div>` elements with `class="accordion-element"`, these are the individual section containers
+  - Within that, add an `<h2>` element with `class="accordion-header"` with a `<button>``class="accordion-button"`
 
 #### Tailwind
 
