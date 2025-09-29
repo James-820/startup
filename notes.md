@@ -331,6 +331,7 @@ Example code:
 
 #### Bootstrap
 - Bootstrap is the "reigning champ" of CSS frameworks, the downside is the page looking like everyone else's
+- [Read this](https://getbootstrap.com/docs/5.2/getting-started/introduction/) later
 - To put it in your application, just reference the Bootstrap CSS files from their CDN (Content Delivery Network):
 ```
 <!DOCTYPE html>
@@ -343,6 +344,18 @@ Example code:
     ...
   </body>
 </html>
+```
+- You can also add their JavaScript to your application at **the end** of the body section, just before the `</body>` tag:
+```
+<body>
+  ...
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+```
+- ***For future reference:*** you can install bootstrap with the NPM to run it off your machine:
+```
+npm install bootstrap@5.3.3
 ```
 
 #### Tailwind
