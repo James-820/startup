@@ -76,6 +76,7 @@ but only free while server is running, so for me I'll just keep it running. Good
 - Click `Associate`
 
 ### Route53 Basic Instructions
+- Placeholder
 
 #### Leasing a Domain Name
 > [!TIP]
@@ -224,6 +225,9 @@ sudo service caddy restart
 - `display: none` hides the element (good for media queries)
 - `display: flex` makes the element a flex container, the children can have the `flex` attribute
 
+### Animations
+- I got nothing here so far.
+
 ### Flex
 
 - This is the [website](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) that I got my notes from
@@ -326,8 +330,20 @@ Example code:
 - Drawbacks: your website will look like everyone else's
 
 #### Bootstrap
-
-
+- Bootstrap is the "reigning champ" of CSS frameworks, the downside is the page looking like everyone else's
+- To put it in your application, just reference the Bootstrap CSS files from their CDN (Content Delivery Network):
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  </head>
+  <body>
+    ...
+  </body>
+</html>
+```
 
 #### Tailwind
 
