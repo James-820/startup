@@ -1,4 +1,4 @@
-## CSS
+# CSS
 - Helps your HTML be cute.
 - 3 ways of adding CSS:
   1. Apply the attributes directly in the element tags
@@ -10,14 +10,14 @@
   - Descendant combinator: `section h2`, space delimited list where each item is a descendant of the one before (this example gets all the `h2` elements that are descendants, or within, `section` elements)
   - 
 
-### Selectors & Attributes/Values Reference List
+## Selectors & Attributes/Values Reference List
 - `display: none` hides the element (good for media queries)
 - `display: flex` makes the element a flex container, the children can have the `flex` attribute
 
-### Animations
+## Animations
 - I got nothing here so far.
 
-### Flex
+## Flex
 
 - This is the [website](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) that I got my notes from
 - IDK about prefixing stuff yet
@@ -78,7 +78,7 @@ Example Code:
 }
 ```
 
-### Media Queries
+## Media Queries
 
 - Media queries detect certain conditions of the webpage, for example, if the page is in portait orientation
 - The CSS inside the media query gets applied when the condition is true
@@ -112,13 +112,13 @@ Example code:
 }
 ```
 
-### Frameworks
+## Frameworks
 
 - CSS Frameworks are essentially pre-written code that helps you speed up your styling
 - Benefits: helps your website look good, speeds up the process of styling
 - Drawbacks: your website will look like everyone else's
 
-#### Bootstrap
+### Bootstrap
 - Bootstrap is the "reigning champ" of CSS frameworks, the downside is the page looking like everyone else's
 - [Read this](https://getbootstrap.com/docs/5.2/getting-started/introduction/) later
 - To put it in your application, just reference the Bootstrap CSS files from their CDN (Content Delivery Network):
@@ -155,10 +155,10 @@ npm install bootstrap@5.3.3
   --bs-primary-rgb: 40, 167, 69; /* RGB values for the same color */
 }
 ```
-#### Bootstrap Reference List
+### Bootstrap Reference List
 - Accordion Element:
   - Add a `<div>` with `class="accordion"`, this is the main container wrapper
   - Within that, add other `<div>` elements with `class="accordion-element"`, these are the individual section containers
   - Within that, add an `<h2>` element with `class="accordion-header"` with a `<button>``class="accordion-button"`
 
-#### Tailwind
+### Tailwind

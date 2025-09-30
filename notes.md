@@ -57,8 +57,4 @@ My startup: [Habit.ly](http://habitly.click)
 
 ## [CSS](Notes/CSS.md)
 
-## React Part 1: Routing
-- Placeholder
-
-## React Part 2: Reactivity
-- Placeholder
+## [React](Notes/React.md)
