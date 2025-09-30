@@ -1,4 +1,6 @@
 # CSS
+
+## Overview
 - Helps your HTML be cute.
 - 3 ways of adding CSS:
   1. Apply the attributes directly in the element tags
@@ -8,22 +10,21 @@
 - Selectors (these select which elements get which styles):
   - Element name: like `body` or `header`, just picks all of that element
   - Descendant combinator: `section h2`, space delimited list where each item is a descendant of the one before (this example gets all the `h2` elements that are descendants, or within, `section` elements)
-  - 
+  - **To be Continued**
 
-## Selectors & Attributes/Values Reference List
+## Common Attributes & Values Reference List
 - `display: none` hides the element (good for media queries)
 - `display: flex` makes the element a flex container, the children can have the `flex` attribute
+- **To be Continued**
 
 ## Animations
-- I got nothing here so far.
+- **Complete this soon**
 
 ## Flex
 
 - This is the [website](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) that I got my notes from
 - IDK about prefixing stuff yet
 - `flex-direction` is set to column if we want the children to be arranged top and bottom, and set to row if side by side is wanted
-
-![Flex image reference 1](CSS_Flex_Ref1.png)
 
 Parent/Container info:
 
@@ -114,6 +115,7 @@ Example code:
 
 ## Frameworks
 
+### Overview
 - CSS Frameworks are essentially pre-written code that helps you speed up your styling
 - Benefits: helps your website look good, speeds up the process of styling
 - Drawbacks: your website will look like everyone else's
