@@ -32,8 +32,22 @@ const root =
 - State variables:
 ```
 ```
-- 
+- Basic building block in React is a component (wich is a function that returns JSX) which gets injected into the tree
+- Using CSS frameworks in the JSX in React can speed up styling
+- Vite: can run a live local server to host JUST the frontend, _and translates JSX to JS and HTML_ for the browser, among other things
 
 ## Part 1: Routing
+- Is the thing that replaces the multiple HTML pages
+- Will have a "deployReact.sh" script instead of "deployFiles"
+  - There will be 2 extra steps
+- Good practice: `npm run test`
+- **Change** `main.css` to `app.css`, and `index.html` to `login.html` (we'll have a different `index.html`)
+- We'll add `app.jsx` and `app.css`
+- Other modules can only grab code if it is being exported with `export` keyword
+- **Important**: must use `className=""` for HTML element tags in JSX instead of `class=""`
+- Watch for `body` selector in app.css, add dot to make it a className `.body`
+- The React version of the DOM is called a shadowDOM, is then copied over to the normal DOM
+- The program will make a React version of the root, and then render the app into that root
+- `npm run dev` then `o` in Vite lets us preview the site
 
 ## Part 2: Reactivity

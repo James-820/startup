@@ -18,4 +18,6 @@ My startup: [Habit.ly](http://habitly.click)
 
 ## [CSS](Notes/CSS.md)
 
+## [JavaScript](Notes/JavaScript.md)
+
 ## [React](Notes/React.md)

@@ -161,7 +161,7 @@ npm install bootstrap@5.3.3
 - Accordion Element:
   - Add a `<div>` with `class="accordion"`, this is the main container wrapper
   - For each accordion item:
-    - Within that parent `<div>`, add another `<div>` element with `class="accordion-item"`, these are the individual section containers
+    - Within that parent `<div>`, add another `<div>` element with `class="accordion-item"` and an `id` for the accordion-collapse elements to reference, these are the individual section containers
     - Within the `accordion-item`, add an `<h2>` element with `class="accordion-header"`, and with a `<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#[ID of the accordion-collapse from below]>"` inside of that with the title of the section included
     - Outside of and below that `<h2>` element, make another `<div>` with `class="accordion-collapse collapse"` or `"accordion-collapse collapse show"` if it's the first one and you want it to show by default, and with an `id` for the button to reference
     - Within that `accordion-collapse` element, put one more `<div>` with `class="accordion-body"` for the actual content of the accordion section
