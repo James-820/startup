@@ -25,6 +25,8 @@
 - This is the [website](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) that I got my notes from
 - IDK about prefixing stuff yet
 - `flex-direction` is set to column if we want the children to be arranged top and bottom, and set to row if side by side is wanted
+- It's helpful to make the parent `min-height` (or `min-width`) set to `100vh` to allow the body to fill the entire visible screen
+  - `vw` refers to viewport width
 
 Parent/Container info:
 
@@ -237,5 +239,38 @@ npm install bootstrap@5.3.3
     - `mb-lg-0` means that the bottom margin will be 0 on large screens (992px), is used because the margin is useful on mobile screens, but unnecessary on larger ones
   - In each of the `a` elements, you can add `#[element id]` for the `href` value, and it will take you to that element on the page (or do other React routing, idk about that yet)
   - **If** you want a search bar, after the `ul` element, add `<form class="d-flex" role="search">` with `<input class="form-control me-2" type="search" placeholder="Search"><button class="btn btn-outline-success" type="submit">Search</button>` inside
+```
+<header class="sticky-top">
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <h1 style="color: lightgreen; font-weight: bold; border-radius: 0.25em;">Habit.ly</h1>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="habits.html">My Habits</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="groups.html">My Groups</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+```
+- Sticky Footer:
+  - Add `class="sticky-bottom"` to your `footer` element
+  - Add a `<nav class="navbar">` inside that
+  - Add `<div class="container-fluid">` inside that
+  - Add a `<p class="text-muted">` inside that with the text you want shown in the footer
+- 
 
 ### Tailwind
