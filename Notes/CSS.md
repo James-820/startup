@@ -218,5 +218,24 @@ npm install bootstrap@5.3.3
   </div>
 </div>
 ```
+- Navigation Header:
+  - Add `class="sticky-top"` to your `header` element to make it stay on the top of the page when you scroll down
+  - Make a `<nav class="navbar navbar-expand-lg bg-light">`
+    - `navbar` is the base Bootstrap navbar class, and is necessary for all navigation bars in Bootstrap
+    - `navbar-expand-lg` means that the navbar will expand horizontally on large screens (bigger than 992px), and will be collapsed on screens smaller than that
+    - Other options for that second phrase are `navbar-expand[-sm, -md, -xl]` (brackets means that it's optional, and without any of those endings it will just always be expanded)
+    - `bg-light` refers to a light-colored background, but other options include `bg-dark`(dark grey or black), `bg-primary` (blue or whatever primary color in your theme), `bg-white`, and others
+  - Add a `<div class="container-fluid">`
+  - Within that `div`, add the brand link as an `h1` inside of an `<a class="navbar-brand" href="[your domain]">`
+  - Then, outside the `a`, add a `<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">` (the ID will target the `div` you add below)
+  - Inside that button, add `<span class="navbar-toggler-icon"></span>`
+  - After the button, add `<div class="collapse navbar-collapse" id="navbarSupportedContent">`
+  - Within that `div`, add `<ul class="navbar-nav me-auto mb-2 mb-lg-0">` with a `<li class="nav-item">` and an `<a class="nav-link" href="#">` nested inside of it
+    - `navbar-nav` styles the list as navigation items within a navbar
+    - `me-auto` means "margin-end auto" and basically will left-align your nav items and allow other items to appear on the right.
+    - `mb-2` adds margin bottom spacing of size 2 (bootstrap spacing goes from 0-5, 0 is 0, 1 is 0.25rem, and then it doubles until 5)
+    - `mb-lg-0` means that the bottom margin will be 0 on large screens (992px), is used because the margin is useful on mobile screens, but unnecessary on larger ones
+  - In each of the `a` elements, you can add `#[element id]` for the `href` value, and it will take you to that element on the page (or do other React routing, idk about that yet)
+  - **If** you want a search bar, after the `ul` element, add `<form class="d-flex" role="search">` with `<input class="form-control me-2" type="search" placeholder="Search"><button class="btn btn-outline-success" type="submit">Search</button>` inside
 
 ### Tailwind

@@ -20,4 +20,6 @@ My startup: [Habit.ly](http://habitly.click)
 
 ## [JavaScript](Notes/JavaScript.md)
 
+### [JavaScript Syntax Cheat Sheet](Notes/js_syntax_cheatsheet.md)
+
 ## [React](Notes/React.md)
