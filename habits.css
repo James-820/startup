@@ -11,3 +11,8 @@ body {
 main {
     flex: 1;
 }
+
+.habit-info {
+    color: green;
+    font-weight: bold;
+}
