@@ -1,71 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!--Head/Metadata Stuff-->
     <head>
-        <!--I Forgor-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!--Title of the webpage-->
         <title>Habit.ly</title>
-        <!--Webpage Icon (is a placeholder for now, logo coming soon)-->
         <link rel="icon" href="png-8-bit-poke-ball.png" />
     </head>
 
   <body>
 
-    <header>
-            <!--Visible Title-->
-            <h1 style="color: green; font-weight: bold;">Habit.ly</h1>
-            <!--Subtitle containing slogan-->
-            <h3 style="font-style: italic; color: darkslategray;">Be accountable. Make progress.</h3>
-            <!--Menu Items for Navigation-->
-            <nav>
-                <!--Home, My Habits, and My Groups for now-->
-                <li><a href="index.html">Home</a></li>
-                <li><a href="habits.html">My Habits</a></li>
-                <li><a href="groups.html">My Groups</a></li>
+        <header class="sticky-top">
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <h1 style="color: lightgreen; font-weight: bold; border-radius: 0.25em;">Habit.ly</h1>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="habits.html">My Habits</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="groups.html">My Groups</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
-            <!--Horizontal Line-->
-            <hr />
         </header>
 
-    <main>
-      <!--Page Title-->
-      <h2>My Habits</h2>
-      <!--Habit tracking information-->
-      <div style="background-color: lightslategray; padding: 0.5em; border-radius: 20px; margin: 0.5em;">
-          <!--Habit 1-->
-          <div class="habit-card" style="background-color: darkslategray; border-radius: 10px; padding: 0.5em; margin: 0.5em;">
-          <span class="habit-name" style="color: whitesmoke; font-weight: bold; font-size: large;">Make Bed</span>
-          <br />
-          <ul style="color: whitesmoke;">
-            <li><span style="font-weight: bold;">Time:</span> Before 8:00 AM</li>
-            <li><span style="font-weight: bold;">I'm done when:</span> All the blankets are tucked or folded</li>
-            <li><span style="font-weight: bold;">Share to:</span> Group 1</li>
-          </ul>
-          <button type="button">Completed</button>
-        </div>
-        <!--Habit 2-->
-        <div class="habit-card" style="background-color: darkslategray; border-radius: 10px; padding: 0.5em; margin: 0.5em;">
-          <span class="habit-name" style="color: whitesmoke; font-weight: bold; font-size: large;">Water Plants</span>
-          <br />
-          <ul style="color: whitesmoke;">
-            <li><span style="font-weight: bold;">Time:</span> After 5:00 PM</li>
-            <li><span style="font-weight: bold;">I'm done when:</span> All 5 plants are watered</li>
-            <li><span style="font-weight: bold;">Share to:</span> None</li>
-          </ul>
-          <button type="button">Completed</button>
-        </div>
-      </div>
-    </main>
+        <main>
+        </main>
 
-    <footer>
-      <!--Horizontal Line-->
-      <hr />
-      <!--My Info:-->
-      <span>Creator information:</span><br />
-      <span>James Day's <a href="https://github.com/James-820/startup">GitHub</a> Repository</span>
-      <p><a href="about.html">About Habit.ly</a></p>
-    </footer>
-  
-  </body>
+        <footer class="sticky-bottom">
+            <nav class="navbar bg-dark navbar-dark">
+                <div class="container-fluid">
+                    <p class="text-muted">Creator information: James Day's 
+                        <a href="https://github.com/James-820/startup">GitHub repository</a><br/><a href="about.html">About Habit.ly</a></p>
+                </div>
+            </nav>
+        </footer>
+
+    </body>
 </html>

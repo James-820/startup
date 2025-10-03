@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="eng">
-    <!--Head/Metadata Stuff-->
     <head>
-        <!--I Forgor-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!--Title of the webpage-->
         <title>Habit.ly</title>
@@ -12,78 +10,43 @@
 
     <body>
 
-        <header>
-            <!--Visible Title-->
-            <h1 style="color: green; font-weight: bold;">Habit.ly</h1>
-            <!--Subtitle containing slogan-->
-            <h3 style="font-style: italic; color: darkslategray;">Be accountable. Make progress.</h3>
-            <!--Menu Items for Navigation-->
-            <nav>
-                <!--Home, My Habits, and My Groups for now-->
-                <li><a href="index.html">Home</a></li>
-                <li><a href="habits.html">My Habits</a></li>
-                <li><a href="groups.html">My Groups</a></li>
+        <!--Header-->
+        <header class="sticky-top">
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <h1 style="color: lightgreen; font-weight: bold; border-radius: 0.25em;">Habit.ly</h1>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="habits.html">My Habits</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="groups.html">My Groups</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
-            <!--Horizontal Line-->
-            <hr />
         </header>
 
         <main>
-            <!---->
-            <h2>My Groups</h2>
-            <!--Organizing rectangle-->
-            <div style="background-color: lightslategray; border-radius: 20px; padding: 0.5em; margin: 0.5em; color: whitesmoke;">
-                <!--First example group-->
-                <div class="group-card" style="background-color: darkslategray; border-radius: 10px; padding: 0.5em; margin: 0.5em;">
-                    <!--Group info-->
-                    <span class="group-name" style="font-weight: bold;">Group 1</span>
-                    <br />
-                    <ul class="group-goals">
-                        <li class="group-goal" style="font-weight: bold;">
-                            <span class="goal-label" style="font-weight: normal;">Daily Progress: </span>5/10
-                        </li>
-                        <li class="group-goal" style="font-weight: bold;">
-                            <span class="goal-label" style="font-weight: normal;">Weekly Progress: </span>30/70
-                        </li>
-                    </ul>
-                    <!--Button to see member list (doesn't do anything yet):-->
-                    <button class="members-btn">See Group Members</button>
-                </div>
-
-                <!--Second example group-->
-                <div class="group-card" style="background-color: darkslategray; border-radius: 10px; padding: 0.5em; margin: 0.5em;">
-                    <!--Group info-->
-                    <span class="group-name" style="font-weight: bold;">Day Family</span>
-                    <br />
-                    <ul class="group-goals">
-                        <li class="group-goal" style="font-weight: bold;">
-                            <span class="goal-label" style="font-weight: normal;">Daily Progress: </span>3/5
-                        </li>
-                        <li class="group-goal" style="font-weight: bold;">
-                            <span class="goal-label" style="font-weight: normal;">Weekly Progress: </span>25/35
-                        </li>
-                    </ul>
-                    <button class="members-btn">See Group Members</button>
-                </div>
-
-                <!--Aside for the notifications:-->
-                <div class="notifications-box" style="background-color: black; border-radius: 10px; padding: 0.5em; margin: 0.5em;">
-                    <ul>
-                        <li class="notification"><span class="user-name" style="font-weight: bold;">James</span> completed a habit!</li>
-                        <li class="notification"><span class="user-name" style="font-weight: bold;">Bob</span> is online</li>
-                        <li class="notification"><span class="user-name" style="font-weight: bold;">Harold</span> cheered you on!</li>
-                    </ul>
-                </div>
-            </div>
         </main>
 
-        <footer>
-            <!--Horizontal Line-->
-            <hr />
-            <!--My Info:-->
-            <span>Creator information:</span><br />
-            <span>James Day's <a href="https://github.com/James-820/startup">GitHub</a> Repository</span>
-            <p><a href="about.html">About Habit.ly</a></p>
+        <footer class="sticky-bottom">
+            <nav class="navbar bg-dark navbar-dark">
+                <div class="container-fluid">
+                    <p class="text-muted">Creator information: James Day's 
+                        <a href="https://github.com/James-820/startup">GitHub repository</a><br/><a href="about.html">About Habit.ly</a></p>
+                </div>
+            </nav>
         </footer>
 
     </body>
