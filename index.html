@@ -45,26 +45,14 @@
 
         <!--Main-->
         <main>
-            <!--Home Title-->
-            <h2>Home</h2>
-            <div style="background-color: lightslategray; padding: 1em; border-radius: 20px; margin: 0.5em;">
-                <!--Form so that this basic HTML can do something basic:-->
-                <form method="get" action="habits.html">
-                    <!--Login info-->
-                    <h3>Login</h3>
-                    <p>
-                        <span>Username:</span>
-                        <br />
-                        <input type="text" placeholder="Username or email" />
-                    </p>
-                    <p>
-                        <span>Password:</span>
-                        <br />
-                        <input type="text" placeholder="Password" />
-                    </p>
-                    <!--Button-->
-                    <button type="submit">Log In</button>
-                </form>
+            <div class="card">
+                <img class="card-img-top" src="placeholder.png" alt="Placeholder image" />
+                <div class="card-body">
+                    <h5 class="card-title">Login</h5>
+                    <input type="text" placeholder="Username or Email"/>
+                    <input type="text" placeholder="Password"/>
+                    <a id="submit-btn" class="btn btn-secondary" href="habits.html">Submit</a>
+                </div>
             </div>
         </main>
 
@@ -72,9 +60,8 @@
         <footer class="sticky-bottom">
             <nav class="navbar bg-dark navbar-dark">
                 <div class="container-fluid">
-                    <p style="color: whitesmoke;">Creator information:</p>
-                    <p style="color: whitesmoke;">James Day's <a href="https://github.com/James-820/startup">GitHub repository</a></p>
-                    <p style="color: whitesmoke;"><a href="about.html">About Habit.ly</a></p>
+                    <p class="text-muted">Creator information: James Day's 
+                        <a href="https://github.com/James-820/startup">GitHub repository</a><br/><a href="about.html">About Habit.ly</a></p>
                 </div>
             </nav>
         </footer>

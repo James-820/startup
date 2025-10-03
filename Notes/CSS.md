@@ -271,6 +271,11 @@ npm install bootstrap@5.3.3
   - Add a `<nav class="navbar">` inside that
   - Add `<div class="container-fluid">` inside that
   - Add a `<p class="text-muted">` inside that with the text you want shown in the footer
-- 
+- Card:
+  - Make a `<div class="card">` (optional: add a `style="width:[width]px"` to the element)
+  - To put the image on top, make an `<img class="card-img-top" src="[source URL]" />`
+    - I'm willing to bet that there's other configurations, like `"card-img-bottom"` or something
+  - After the image (still within the parent div), add a `<div class="card-body">`
+  - Within that, you can add `<h5 class="card-title">` and `<p class="card-text">` as well, or more stuff if you want
 
 ### Tailwind
