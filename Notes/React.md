@@ -37,6 +37,9 @@ const root =
 - Vite: can run a live local server to host JUST the frontend, _and translates JSX to JS and HTML_ for the browser, among other things
 
 ## Part 1: Routing
+
+[Vite Notes](Vite.md)
+
 - Is the thing that replaces the multiple HTML pages
 - Will have a "deployReact.sh" script instead of "deployFiles"
   - There will be 2 extra steps
