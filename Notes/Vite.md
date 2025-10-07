@@ -31,5 +31,10 @@ npm run dev
     - `App.css` - CSS for the top-level application component
   - `./src/assets`:
     - `react.svg` - React logo
-- You should use `.jsx` file extension for JSX files (as opposed to `.js`)
-- 
+- You should probably use `.jsx` file extension for JSX files (as opposed to `.js`)
+- When you run `npm run dev`, it makes a temporary directory to test the code, is for development
+- When you run `npm run build`, it runs the `vite build` command from the `package.json` file and invokes the `Vite` CLI, whatever that means
+  - `vite build` preps everything into a deployment-ready version contained in a distribution subdirectory called `dist`
+- To deploy a production release (build):
+  - We'll be using the `deployReact.sh` file from the Simon React
+  - That script makes a production build by calling `npm run build` and then copying the resulting `dist` to the server
