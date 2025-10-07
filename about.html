@@ -6,6 +6,7 @@
         <link rel="icon" href="png-8-bit-poke-ball.png" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" 
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="about.css">
     </head>
     
     <body>
@@ -27,45 +28,43 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="habits.html">My Habits</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="groups.html">My Groups</a>
-                            </li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </header>
 
-        <main class="container-fluid">
+        <main>
             <!---->
-            <h2>About <span style="color: forestgreen; font-weight: bold;">Habit.ly</span></h2>
+            <h2 id="about-heading">About <span style="color: forestgreen; font-weight: bold;">Habit.ly</span></h2>
             <!--This paragraph contains the about info-->
-            <div class="demo-box">
-                <p>    
-                    Habit.ly was first created by James Day, then a student at Brigham Young University in Provo, Utah. His goal was to create a 
-                    habit tracker that would leverage group accountability to support people in their quest for progress. Later, he got super, 
-                    super rich, and now lives on a private island somewhere where he can make more web apps and paint his minis in peace.
-                </p>
-                <p>
-                    If you have questions or need customer support, that's really too bad. We don't have any of that stuff yet. Just be patient for now.
-                </p>
-            </div>
-            <!--This part contains what will be a random cool photo and motivational quote-->
-            <div>
-                <img src="placeholder.png" />
+            <div class="card">
+                <div class="card-body">
+                    <p class="card-text">
+                        Habit.ly was first created by James Day, then a student at Brigham Young University in Provo, Utah. His goal was to create a 
+                        habit tracker that would leverage group accountability to support people in their quest for progress. Later, he got super, 
+                        super rich, and now lives on a private island somewhere where he can make more web apps and paint his minis in peace.
+                    </p>
+                    <p class="card-text">
+                        If you have questions or need customer support, that's really too bad. We don't have any of that stuff yet. Just be patient for now.
+                    </p>
+                </div>
             </div>
 
-            <div class="demo-box">
-                <p>
-                    "Yesterday is history,<br>
-                    tomorrow is a mystery,<br>
-                    and today is a gift...<br>
-                    that is why it is called the 'present'."
-                </p>
-                <p>
-                    -- Master Oogway, from Kung Fu Panda
-                </p>
+            <!--This part contains what will be a random motivational quote-->
+            <div class="card">
+                <div class="card-body">
+                    <p class="card-text" id="inspiring-quote">
+                        "Yesterday is history, tomorrow is a mystery, and today is a gift... that is why it is called the 'present'." 
+                        -- Master Oogway, from Kung Fu Panda
+                    </p>
+                </div>
             </div>
+
+            <div class="pic-frame">
+                <img id="random-pic" src="placeholder.png" alt="Random cool picture">
+            </div>
+
         </main>
 
         <footer class="sticky-bottom">
