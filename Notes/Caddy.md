@@ -2,6 +2,9 @@
 > [!NOTE]
 > This is for setting up HTTPS and some security measures for the web app (See the [instructions](https://github.com/webprogramming260/.github/blob/main/profile/webServers/https/https.md) for more details).
 
+- HTTPS is through Port 443
+- Can redirect to subdomains within the domain
+
 ## Caddy Basic Instructions
 HTTPS and TLS are important parts of web security, and as part of the "handshake" that a client and server make to encrypt their data, they involve web certificates. Let'sEncrypt is a non-profit that gives out these certificates, and so we need to set up our server to get one using Caddy.
 

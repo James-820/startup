@@ -34,12 +34,14 @@ const root =
 ```
 - Basic building block in React is a component (wich is a function that returns JSX) which gets injected into the tree
 - Using CSS frameworks in the JSX in React can speed up styling
-- Vite: can run a live local server to host JUST the frontend, _and translates JSX to JS and HTML_ for the browser, among other things
+- Vite: can run a live local server to host JUST the frontend, and ***translates JSX to JS and HTML*** for the browser, among other things
+- Usually, we use a `<div id="root">` as the root of the React tree
 
 ## Part 1: Routing
 
 [Vite Notes](Vite.md)
 
+### Routing Overview
 - Is the thing that replaces the multiple HTML pages
 - Will have a "deployReact.sh" script instead of "deployFiles"
   - There will be 2 extra steps
@@ -52,5 +54,22 @@ const root =
 - The React version of the DOM is called a shadowDOM, is then copied over to the normal DOM
 - The program will make a React version of the root, and then render the app into that root
 - `npm run dev` then `o` in Vite lets us preview the site
+- The `app.jsx` will make a `<BrowserRouter>` element, with lots of stuff in the 
+- There's also some `<Routes>` stuff??? I don't remember learning this
+
+### Vite
+- Vite essentially combines everything up into just a few files:
+  - 1 CSS, 1 JSX, and the OG HTML
+- ***This is what Vite does***
+- 
 
 ## Part 2: Reactivity
+- These are the [slides](https://docs.google.com/presentation/d/1nMPGe1x8KWnCamz22QSPMgkpK1_Y8m4zpxZPHqMfLbw/edit?slide=id.g27fdbd84860_0_0#slide=id.g27fdbd84860_0_0)
+- Start with a basic, unreactive app
+- The way to tell React to update the tree is by using a `React.useState([initial state value]);` thing
+  - This returns a state variable and an update function (state changes, but function doesn't)
+  - Use the update function to change the state variable
+  - Hardcoding the initial state value isn't great, better to pass it in as a parameter (arguments form an object??)
+- JSON:
+  - Takes objects and turns them into strings
+  - See valid types in [slides](https://docs.google.com/presentation/d/1nMPGe1x8KWnCamz22QSPMgkpK1_Y8m4zpxZPHqMfLbw/edit?slide=id.g27fdbd84860_0_0#slide=id.g27fdbd84860_0_0)
