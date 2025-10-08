@@ -1,7 +1,8 @@
 {
   "dependencies": {
     "g": "^2.0.1",
-    "npm": "^11.6.1"
+    "npm": "^11.6.1",
+    "react-router-dom": "^7.9.4"
   },
   "devDependencies": {
     "vite": "^7.1.9"
