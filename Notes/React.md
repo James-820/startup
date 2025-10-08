@@ -118,6 +118,8 @@ root.render(<App />);
 
 [Vite Notes](Vite.md)
 
+[Extended Routing Notes](ReactRouter.md)
+
 ### Routing Overview
 - Is the thing that replaces the multiple HTML pages
 - Will have a "deployReact.sh" script instead of "deployFiles"
@@ -138,7 +140,6 @@ root.render(<App />);
 - Vite essentially combines everything up into just a few files:
   - 1 CSS, 1 JSX, and the OG HTML
 - ***This is what Vite does***
-- 
 
 ## Part 2: Reactivity
 - These are the [slides](https://docs.google.com/presentation/d/1nMPGe1x8KWnCamz22QSPMgkpK1_Y8m4zpxZPHqMfLbw/edit?slide=id.g27fdbd84860_0_0#slide=id.g27fdbd84860_0_0)
