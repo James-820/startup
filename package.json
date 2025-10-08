@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "g": "^2.0.1",
+    "npm": "^11.6.1"
+  },
+  "devDependencies": {
+    "vite": "^7.1.9"
+  }
+}
