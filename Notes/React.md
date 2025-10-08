@@ -45,6 +45,7 @@ const root =
 - Usually, we use a `<div id="root">` as the root of the React tree
 
 ## Components
+- [This site](https://react.dev/learn/your-first-component) is good for reading later in own time
 - Components allow for code to more fully represent the elements the user interacts with, in addition to being able to better reuse code for repeated elements
   - Example of a component (JSX, the "Demo" is not valid HTML, so it injects the React stuff):
 ```
@@ -110,9 +111,6 @@ root.render(<App />);
 - Reactivity:
   - The state and properties of a function determine the reactivity
   - Whenever a component's state or properties change, then the `render` functions for the component and all its dependent components are called
-
-```
-```
 
 ## Part 1: Routing
 
