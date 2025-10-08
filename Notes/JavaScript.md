@@ -31,6 +31,15 @@
   - Values can be whatever you want, even nested objects
   - Can be used to store as a `.json` file, learn about that later
 ```
+const obj = {
+  a: 3,
+  b: 'fish',
+  c: [1, true, 'dog'],
+  d: { e: false},
+  f: function () {
+    return 'hello';
+  },
+};
 ```
 - Classes & Inheritance:
   - For syntax, see [slides](https://docs.google.com/presentation/d/1nMPGe1x8KWnCamz22QSPMgkpK1_Y8m4zpxZPHqMfLbw/edit?slide=id.g27fdbd84860_0_0#slide=id.g27fdbd84860_0_0)

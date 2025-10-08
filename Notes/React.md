@@ -91,6 +91,8 @@ function Demo(props) {
 - State:
   - A component can also have an internal state
   - State is created by calling `React.useState` function, which returns a variable that's the state, and a function to update/change the state
+  - Setter functions are typically named `set` + capital name of the variable they set
+  - To get multiple state variables, use `const [variable, setVariable] = React.useState([value])` multiple times
   - Example:
 ```
 // State and function are captured and assigned names here:
