@@ -1,5 +1,12 @@
 # React
 
+Important to include in your JSX files:
+```
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+```
+
 ## Overview Notes
 - Is part of what runs on the browser
 - D.R.Y.: Don't Repeat Yourself
@@ -36,6 +43,76 @@ const root =
 - Using CSS frameworks in the JSX in React can speed up styling
 - Vite: can run a live local server to host JUST the frontend, and ***translates JSX to JS and HTML*** for the browser, among other things
 - Usually, we use a `<div id="root">` as the root of the React tree
+
+## Components
+- Components allow for code to more fully represent the elements the user interacts with, in addition to being able to better reuse code for repeated elements
+  - Example of a component (JSX, the "Demo" is not valid HTML, so it injects the React stuff):
+```
+<div>
+  Component: <Demo />
+</div>
+
+// The actual React component function thingy:
+function Demo() {
+  const who = 'world';
+  return <b>Hello {who}</b>;
+}
+
+// The result:
+<div>Component: <b>Hello world</b></div>
+
+// Normal variable names also work:
+const hello = <div>Hello</div>;
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(hello);
+
+// Result:
+<div>Hello</div>
+```
+- CSS:
+  - You could apply CSS styling by importing the stylesheet into the JSX file, for example, with `import './index.css';` at the top with the rest of the import statements
+  - Just be sure to use `className=""` in JSX because `class` is already a keyword in JavaScript
+- Children:
+  - The components that JSX returns could also reference other components ("child" components)
+  - The `App` component is usually the parent of all other components
+- Properties:
+  - The elements can also recieve properties (kind of like parameters/arguments)
+  - Example:
+```
+// Calling the React component:
+<div>Component: <Demo who="Walke" /><div>
+
+// Using the properties in the constructor function:
+function Demo(props) {
+  return <b>Hello {props.who}</b>;
+}
+```
+- State:
+  - A component can also have an internal state
+  - State is created by calling `React.useState` function, which returns a variable that's the state, and a function to update/change the state
+  - Example:
+```
+// State and function are captured and assigned names here:
+function App() {
+  const [clicked, updateClicked] = React.useState(false);
+
+// This function essentially switches the state between true and false
+  function onClicked() {
+    updateClicked(!clicked);
+  }
+
+  return <p onClick={onClicked}>clicked: {`${clicked}`}</p>;
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
+```
+- Reactivity:
+  - The state and properties of a function determine the reactivity
+  - Whenever a component's state or properties change, then the `render` functions for the component and all its dependent components are called
+
+```
+```
 
 ## Part 1: Routing
 
