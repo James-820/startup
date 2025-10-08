@@ -46,7 +46,7 @@ export function App() {
 }
 ```
 - Handling Navigation:
-  - Normally in HTML we use anchor (`<a>`) tags, but React Router uses its own custom `Link` component
+  - Normally in HTML we use anchor (`<a>`) tags, but React Router uses its own custom `Link` component (or `NavLink`)
   - The `Link` component is a wrapper for the anchor tags, making sure they work properly within React Router
   - Links use the `to` property instead of `href`
   - In the example below, the `nav` element will not be re-rendered with URL changes
