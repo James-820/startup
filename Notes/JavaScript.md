@@ -7,6 +7,11 @@
 - Node.js is the interpreter for JS, can be used to run stuff on the backend
 - NPM is the Node Package Manager, used to use other people's code
 
+To add JS to HTML:
+1. Script block: Directly including it in the HTML within the content of a `<script> element`
+2. External code: Using the `src` attribute of the `script` element to reference an external JavaScript file.
+3. Inline event attribute: Putting JavaScript directly inline as part of an event attribute handler.
+
 ## Comments
 ```
 // Line comment
