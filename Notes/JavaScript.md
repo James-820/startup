@@ -78,3 +78,24 @@ const obj = {
   - Kinda like other programming language
 - Destructuring:
   - Can assign new variables to individual array or object values (see slides)
+- JSON:
+  - `const json = JSON.stringify([object name]);` turns an object into a JSON file
+  - `const objFromJson = JSON.parse([json file]);` turns a JSON into an object
+- Local Storage:
+  - Storing things that other browsers can't see???
+  - `localStorage.setItem('myKey)
+- Hooks:
+  - `useState` - component state
+  - `useEffect` - lifecycle & external events??
+    - Takes a function as an argument
+    - That function gets called each time when the component gets re-rendered in the tree
+    - Kinda saying "whenever the component changes, call this function"
+    - You can add state variables to tell the function when to get called
+    - Blank brackets means only do the first time
+- Passing in values to react functions:
+  - An object gets passed in
+  - Objects are just key: value pairs
+  - Be aware of the difference between the object, the key, and the value
+    - Key: what we reference in the function
+    - Value: the state variable that the key references
+  - Functions should probably be declared at a higher level, then passed in as properties
