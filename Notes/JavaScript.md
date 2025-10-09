@@ -7,6 +7,29 @@
 - Node.js is the interpreter for JS, can be used to run stuff on the backend
 - NPM is the Node Package Manager, used to use other people's code
 
+## Comments
+```
+// Line comment
+
+/*
+Block comment
+*/
+```
+
+## NPM
+
+These are the main steps for using NPM in your program:
+
+1. Create your project directory
+2. Initialize it for NPM by running `npm init -y`
+3. Make sure `.gitignore` file contains `node_modules`
+4. Install desired packages with `npm install <package name>`
+5. Add `require('<package name>')` to your JavaScript
+6. Use the code the package provides in your JavaScript
+7. Then you can run the code using `node index.js`
+
+Note: "Deno" and "Bun" are some recent Node.js competitors, worth looking into
+
 ## JS Advanced
 - Functions can be anonymous in two ways, and also can be given names in two ways:
   - Arrow functions and anonymous functions
