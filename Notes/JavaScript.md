@@ -30,6 +30,10 @@ These are the main steps for using NPM in your program:
 
 Note: "Deno" and "Bun" are some recent Node.js competitors, worth looking into
 
+## Debuggin With Node
+
+[This video](https://youtu.be/B0le_Z_2TQY) takes you through the process of debugging.
+
 ## JS Advanced
 - Functions can be anonymous in two ways, and also can be given names in two ways:
   - Arrow functions and anonymous functions
