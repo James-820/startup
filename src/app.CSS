@@ -1,34 +1,34 @@
-* {
-    /*this is pretty much a placeholder for now*/
-    font-family: sans-serif;
-}
-
-body {
-    min-height: 100vh;
+.body {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    flex: 0;
+}
+
+.navbar-brand {
+    color: lightgreen;
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
+    color: darkgreen;
+    background-color: lightgreen;
 }
 
 main {
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
-div.card {
-    width: 500px;
+footer {
     background-color: lightgreen;
-}
-
-div.card-body {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1em;
-}
-
-#submit-btn {
-    align-self: center;
-    background-color: darkslategray;
+    flex: 0;
 }
