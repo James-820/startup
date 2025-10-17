@@ -4,6 +4,8 @@ import './app.css';
 import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
 import { About } from './about/about';
 import { Login } from './login/login';
+import { Habits } from './habits/habits';
+import { Groups } from './groups/groups';
 
 export default function App() {
     return (
@@ -17,10 +19,10 @@ export default function App() {
                             <NavLink className='nav-link' to=''>Home</NavLink>
                         </li>
                         <li className='nav-item'>
-                            <a className='nav-link' href="habits.html">My Habits</a>
+                            <NavLink className='nav-link' to="habits">My Habits</NavLink>
                         </li>
                         <li className='nav-item'>
-                            <a className='nav-link' href="">My Groups</a>
+                            <NavLink className='nav-link' to="groups">My Groups</NavLink>
                         </li>
                         <li className='nav-item'>
                             <NavLink className='nav-link' to="about">About</NavLink>
@@ -32,8 +34,8 @@ export default function App() {
             <Routes>
                 <Route path='/' element={<Login />} exact />
                 <Route path='/about' element={<About />} />
-                <Route path='/' element='' />
-                <Route path='/' element='' />
+                <Route path='/habits' element={<Habits />} />
+                <Route path='/groups' element={<Groups />} />
                 <Route path='*' element={<NotFound />} />
             </Routes>
 
