@@ -11,23 +11,3 @@ main {
     flex-direction: column;
     gap: 1em;
 }
-
-.btn {
-    background-color: darkgreen;
-    color: white;
-    box-sizing: border-box;
-    border: 2px solid transparent;
-}
-
-.btn:hover {
-    border-color: black;
-    background-color: white;
-    color: black;
-}
-
-.btn:hover:active {
-    transition: none !important;
-    border-color: transparent;
-    background-color: black;
-    color: white;
-}

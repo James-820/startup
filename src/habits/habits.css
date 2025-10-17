@@ -1,4 +1,48 @@
-.habit-info {
-    color: green;
+main {
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.page-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+#summary-btn {
+    display: none;
+}
+
+#habits-bar {
+    flex: 1;
+}
+
+#summary-bar {
+    flex: 2;
+    background-color: lightgreen;
+}
+
+.habit h5 {
+    color: darkgreen;
     font-weight: bold;
+}
+
+.habit .btn {
+    align-self: flex-start;
+}
+
+@media (orientation: portrait) {
+    #summary-bar {
+        display: none;
+    }
+
+    .habit {
+        width: 75vw;
+    }
+
+    #summary-btn {
+        display: block;
+    }
 }

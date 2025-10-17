@@ -2,26 +2,12 @@ main {
     flex: 1;
     padding: 1em;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
     row-gap: 1em;
 }
 
 #about-heading span {
     font-weight: bold;
     color: darkgreen;
-}
-
-.card {
-    box-sizing: border-box;
-    border: 2px solid black;
-    background-color: lightgray;
-}
-
-.card:hover {
-    border-color: darkgreen;
 }
 
 #random-pic {

@@ -1,6 +1,4 @@
 .body {
-    /* background-color: lightgreen; */
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,7 +10,6 @@
 header {
     background-color: lightgray;
     flex: 0;
-    /* align-self: stretch; */
     width: 100vw;
 
     padding-left: 1.5em;
@@ -42,9 +39,6 @@ header {
 }
 
 main {
-    /* background-color: gray; */
-
-    flex: 1;
     width: 100vw;
 
     display: flex;
@@ -66,4 +60,34 @@ footer {
 
 footer a {
     color: darkgreen;
+}
+
+.card {
+    box-sizing: border-box;
+    border: 2px solid black;
+    background-color: lightgray;
+}
+
+.card:hover {
+    border-color: darkgreen;
+}
+
+.btn {
+    background-color: darkgreen;
+    color: white;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+}
+
+.btn:hover {
+    border-color: black;
+    background-color: white;
+    color: black;
+}
+
+.btn:hover:active {
+    transition: none !important;
+    border-color: transparent;
+    background-color: black;
+    color: white;
 }
