@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './app.css';
 import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
 import { About } from './about/about';
-import { Nav } from 'react-bootstrap';
+import { Login } from './login/login';
 
 export default function App() {
     return (
@@ -14,7 +14,7 @@ export default function App() {
                     <div className='navbar-brand'>Habit.ly</div>
                     <div className='navbar-nav'>
                         <li className='nav-item'>
-                            <a className='nav-link' href="index.html">Home</a>
+                            <NavLink className='nav-link' to=''>Home</NavLink>
                         </li>
                         <li className='nav-item'>
                             <a className='nav-link' href="habits.html">My Habits</a>
@@ -30,7 +30,11 @@ export default function App() {
             </header>
 
             <Routes>
+                <Route path='/' element={<Login />} exact />
                 <Route path='/about' element={<About />} />
+                <Route path='/' element='' />
+                <Route path='/' element='' />
+                <Route path='*' element={<NotFound />} />
             </Routes>
 
             <footer className='sticky-bottom'>
@@ -39,4 +43,8 @@ export default function App() {
         </div>
         </BrowserRouter>
     );
+}
+
+function NotFound() {
+  return <main className="container-fluid text-center">404: Return to sender. Address unknown.</main>;
 }

@@ -10,11 +10,12 @@ export function About() {
                     <p class="card-text">
                         Habit.ly was first created by James Day, then a student at Brigham Young University in Provo, Utah. His goal was to create a 
                         habit tracker that would leverage group accountability to support people in their quest for progress. Later, he got super, 
-                        super rich, and now lives on a private island somewhere where he can make more web apps and paint his minis in peace.
+                        super rich, and now lives on a private island somewhere where he can make more web apps and paint Warhammer minis in peace (or at 
+                        least that's what he's manifesting for himself).
                     </p>
                     <p class="card-text">
                         If you have questions or need customer support, that's really too bad. We don't have any of that stuff yet. Just be patient for now. 
-                        In the meantime, here's a quote by a person:
+                        In the meantime, here's a quote:
                     </p>
                 </div>
             </div>
@@ -29,7 +30,7 @@ export function About() {
             </div>
 
             <div class="pic-frame">
-                <img id="random-pic" src="../../public/placeholder.png" alt="Random cool picture" />
+                <img id="random-pic" src="/placeholder.png" alt="Random cool picture" />
             </div>
 
         </main>

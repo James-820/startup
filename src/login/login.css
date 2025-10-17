@@ -1,0 +1,32 @@
+main {
+    justify-content: center;
+}
+
+.card {
+    width: 25vw;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.btn {
+    background-color: darkgreen;
+    color: white;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+}
+
+.btn:hover {
+    border-color: black;
+    background-color: white;
+}
+
+.btn:hover:active {
+    transition: none !important;
+    border-color: transparent;
+    background-color: black;
+    color: white;
+}
