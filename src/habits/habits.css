@@ -21,7 +21,7 @@ main {
 
 #summary-bar {
     flex: 2;
-    background-color: lightgreen;
+    align-self: stretch;
 }
 
 .habit h5 {
