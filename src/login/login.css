@@ -1,9 +1,5 @@
-main {
-    justify-content: center;
-}
-
 .card {
-    width: 25vw;
+    min-width: 500px;
 }
 
 .card-body {

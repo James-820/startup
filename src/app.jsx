@@ -21,9 +21,6 @@ export default function App() {
                             <NavLink className='nav-link' to="habits">My Habits</NavLink>
                         </li>
                         <li className='nav-item'>
-                            <NavLink className='nav-link' to="groups">My Groups</NavLink>
-                        </li>
-                        <li className='nav-item'>
                             <NavLink className='nav-link' to="about">About</NavLink>
                         </li>
                     </div>
