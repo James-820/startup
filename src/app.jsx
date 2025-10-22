@@ -5,7 +5,6 @@ import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
 import { About } from './about/about';
 import { Login } from './login/login';
 import { Habits } from './habits/habits';
-import { Groups } from './groups/groups';
 
 export default function App() {
     return (
@@ -35,7 +34,6 @@ export default function App() {
                 <Route path='/' element={<Login />} exact />
                 <Route path='/about' element={<About />} />
                 <Route path='/habits' element={<Habits />} />
-                <Route path='/groups' element={<Groups />} />
                 <Route path='*' element={<NotFound />} />
             </Routes>
 
